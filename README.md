@@ -1,6 +1,6 @@
 # Civil_Advocacy
 
-This is an App With which people can know more their politions made while taking Advanced Mobile App Development coursework at DePaul.
+This is an App With which people can know more their politicians made while taking Advanced Mobile App Development coursework at DePaul.
 
 (See more Screenshots folder --> screenshots.md)
 https://github.com/shoebsmk/Civil_Advocacy/blob/bbc985c94994ddfb84be76bfa390900dd9b29a6c/Screenshots/Screenshots.md
