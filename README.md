@@ -1,8 +1,8 @@
 # Civil_Advocacy
 
 This is an App With which people can know more their politions made while taking Advanced Mobile App Development coursework at DePaul.
-(See Screenshots folder --> screenshots.md)
 
+(See more Screenshots folder --> screenshots.md)
 https://github.com/shoebsmk/Civil_Advocacy/blob/bbc985c94994ddfb84be76bfa390900dd9b29a6c/Screenshots/Screenshots.md
 
 This app will acquire and display an interactive list of political officials that represent the current location (or a specified location) at each level of government.
