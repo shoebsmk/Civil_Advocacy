@@ -5,6 +5,7 @@ This is an App With which people can know more their politions made while taking
 (See more Screenshots folder --> screenshots.md)
 https://github.com/shoebsmk/Civil_Advocacy/blob/bbc985c94994ddfb84be76bfa390900dd9b29a6c/Screenshots/Screenshots.md
 
+
 This app will acquire and display an interactive list of political officials that represent the current location (or a specified location) at each level of government.
 
 • Android location services will be used to determine the user’s location.
@@ -18,3 +19,7 @@ This app will acquire and display an interactive list of political officials tha
 • Clicking on the photo of an official will display a Photo Activity, showing a larger version of the photo.
 
 ![RecyclerView](https://user-images.githubusercontent.com/42929978/213858563-ee8798ec-09ae-471b-ab4d-dc426ffb9500.jpeg)
+
+Demo Video:
+
+https://www.youtube.com/watch?v=CKSrq0d2rco
