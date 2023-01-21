@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".PersonActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/personCL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/material_dynamic_secondary20">
+
+        <TextView
+            android:id="@+id/PAAddressTV"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@color/material_dynamic_primary20"
+            android:gravity="center"
+            android:hint="6424 N Hoyne "
+            android:textAlignment="center"
+            android:textColor="#E7F6F2"
+            android:textColorHint="#E7F6F2"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/officialIV"
+            android:layout_width="145dp"
+            android:layout_height="178dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="Official Image"
+            android:onClick="clickPhoto"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PAAddressTV"
+            app:shapeAppearanceOverlay="@style/corner"
+            app:srcCompat="@drawable/missing" />
+
+        <TextView
+            android:id="@+id/officialTVP"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="8dp"
+            android:hint="Official"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/officialIV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PAAddressTV" />
+
+        <TextView
+            android:id="@+id/officeTVP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:hint="Office"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/officialIV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/officialTVP" />
+
+        <TextView
+            android:id="@+id/partyTVP"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:hint="Party"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/officialIV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/officeTVP" />
+
+        <HorizontalScrollView
+            android:id="@+id/ChannelsSV"
+            android:layout_width="243dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/officialIV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/partyTVP">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/facebookBtnV"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="3dp"
+                    android:onClick="clickFacebook"
+                    app:srcCompat="@drawable/ic_launcher_foreground" />
+
+                <ImageView
+                    android:id="@+id/youtubeBtnV"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="3dp"
+                    android:onClick="clickYoutube"
+                    app:srcCompat="@drawable/ic_launcher_foreground" />
+
+                <ImageView
+                    android:id="@+id/twitterBtnV"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="3dp"
+                    android:onClick="clickTwitter"
+                    app:srcCompat="@drawable/ic_launcher_foreground" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/addressLinkTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="10dp"
+            android:autoLink="map"
+            android:hint="Address link"
+            android:onClick="clickMap"
+            android:textAlignment="viewStart"
+            android:textColor="#00EFEF"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/addressLabelTV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/addressLabelTV"
+            app:layout_constraintTop_toTopOf="@+id/addressLabelTV"
+            app:layout_constraintVertical_bias="0.451"
+            tools:text="Loading address link" />
+
+        <TextView
+            android:id="@+id/phoneLinkTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="10dp"
+            android:autoLink="phone"
+            android:hint="Phone link"
+            android:textAlignment="viewStart"
+            android:textColor="#FF00AA"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/phoneLabelTV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/phoneLabelTV"
+            app:layout_constraintTop_toTopOf="@+id/phoneLabelTV"
+            tools:text="Loading phone link" />
+
+        <TextView
+            android:id="@+id/emailLinkTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="10dp"
+            android:autoLink="email"
+            android:hint="Email link"
+            android:textAlignment="viewStart"
+            android:textColor="#FF00AA"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/emailLabelTV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/emailLabelTV"
+            app:layout_constraintTop_toTopOf="@+id/emailLabelTV"
+            tools:text="Loading email link" />
+
+        <TextView
+            android:id="@+id/webLinkTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="10dp"
+            android:autoLink="web"
+            android:hint="Email link"
+            android:textAlignment="viewStart"
+            android:textColor="#FF00AA"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/webLabelTV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/webLabelTV"
+            app:layout_constraintTop_toTopOf="@+id/webLabelTV"
+            app:layout_constraintVertical_bias="0.516"
+            tools:text="Loading web link" />
+
+        <ImageView
+            android:id="@+id/partyLogoIV"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="4dp"
+            android:onClick="clickLogo"
+            app:layout_constraintBottom_toBottomOf="@+id/officialIV"
+            app:layout_constraintEnd_toEndOf="@+id/officialIV"
+            app:layout_constraintHorizontal_bias="0.514"
+            app:layout_constraintStart_toStartOf="@+id/officialIV"
+            app:srcCompat="@drawable/help" />
+
+        <ImageView
+            android:id="@+id/webLabelTV"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="@+id/addressLabelTV"
+            app:layout_constraintTop_toBottomOf="@+id/emailLabelTV"
+            app:srcCompat="@drawable/web_address" />
+
+        <ImageView
+            android:id="@+id/emailLabelTV"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="@+id/addressLabelTV"
+            app:layout_constraintTop_toBottomOf="@+id/phoneLabelTV"
+            app:srcCompat="@drawable/mail" />
+
+        <ImageView
+            android:id="@+id/phoneLabelTV"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="@+id/addressLabelTV"
+            app:layout_constraintTop_toBottomOf="@+id/addressLabelTV"
+            app:srcCompat="@drawable/phone" />
+
+        <ImageView
+            android:id="@+id/addressLabelTV"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ChannelsSV"
+            app:srcCompat="@drawable/map" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

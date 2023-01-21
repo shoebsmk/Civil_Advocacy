@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/personCL2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    android:fillViewport="true"
+    tools:context=".PhotoActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/officeTVP2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Office"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/officialTVP2" />
+
+        <TextView
+            android:id="@+id/officialTVP2"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="10dp"
+            android:hint="Official"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PAAddressTV2" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/officialIV2"
+            android:layout_width="382dp"
+            android:layout_height="439dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="Official Image"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/officeTVP2"
+            app:shapeAppearanceOverlay="@style/corner"
+            app:srcCompat="@drawable/missing" />
+
+        <TextView
+            android:id="@+id/PAAddressTV2"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@color/material_dynamic_primary20"
+            android:gravity="center"
+            android:hint="6424 N Hoyne "
+            android:textAlignment="center"
+            android:textColor="#E7F6F2"
+            android:textColorHint="#E7F6F2"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/partyLogoIV2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:clickable="false"
+            android:contentDescription="@string/app_name"
+            android:onClick="clickLogo"
+            app:layout_constraintBottom_toBottomOf="@+id/officialIV2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/help" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

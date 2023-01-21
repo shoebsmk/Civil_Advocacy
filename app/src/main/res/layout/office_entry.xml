@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="9dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginEnd="9dp"
+    android:layout_marginBottom="3dp"
+    app:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/office_entry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/material_dynamic_primary30">
+
+        <TextView
+            android:id="@+id/officeNameTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:hint="Vice President of the United States"
+            android:paddingEnd="2dp"
+            android:textColor="@color/material_dynamic_primary90"
+            android:textColorHint="@color/material_dynamic_primary90"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/officiaImageIV"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/officialNameTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:hint="Joseph R. Biden"
+            android:paddingEnd="2dp"
+            android:textColor="@color/material_dynamic_primary90"
+            android:textColorHint="@color/material_dynamic_primary90"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/officiaImageIV"
+            app:layout_constraintTop_toBottomOf="@+id/officeNameTV" />
+
+        <TextView
+            android:id="@+id/officialPartyTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:hint="(Party)"
+            android:paddingEnd="2dp"
+            android:textColor="@color/material_dynamic_primary90"
+            android:textColorHint="@color/material_dynamic_primary90"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/officiaImageIV"
+            app:layout_constraintTop_toBottomOf="@+id/officialNameTV" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/officiaImageIV"
+            android:layout_width="80dp"
+            android:layout_height="95dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/corner"
+            app:srcCompat="@drawable/missing" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
